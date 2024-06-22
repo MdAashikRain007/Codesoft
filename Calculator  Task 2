@@ -1,0 +1,22 @@
+""" Design a simple calculator with basic arithmetic operations.
+Prompt the user to input two numbers and an operation choice.
+
+Perform the calculation and display the result."""
+
+num1 = int(input("Enter your first  value \n"))
+
+num2 = int(input ("Enetr your second value \n"))
+
+operation =int(input(" Enter your operation 1 for add , 2 for sub , 3 for mul , 4 for div \n"))
+
+match operation :
+    case 1 :
+        print("Your Answare is ", num1 + num2)
+    case 2 :
+        print("Your Answare is ", num1 - num2)
+    case 3 :
+        print("Your Answare is ", num1 * num2)    
+    case 4 :
+        print("Your Answare is ", num1 / num2)    
+    case _:
+         print( "You have entered wrong value :")
